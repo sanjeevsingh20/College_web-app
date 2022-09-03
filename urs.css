@@ -1,0 +1,424 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#bg-banner{
+    background:linear-gradient(rgba(0,0,0,0.5),rgb(234 234 179)), url('educa.webp');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.logo{
+    width: 150px;
+    position: absolute;
+    top: 4%;
+    left: 8%;
+}
+.point-name{
+    text-align: center;   
+    color: white;
+    padding-top: 180px;
+}
+.point-name h1{
+    font-size: 45px;
+    font-family: 'Fredoka One', cursive;
+}
+.point-name p{
+    font-style: italic;
+    font-family: 'Fredoka One', cursive;
+}
+.search-box{
+    padding-top: 40px;
+}
+#query{
+    width: 40%;
+    height: 2.5rem;
+    border-radius: 20px;
+    text-align: center;
+    font-size: large;
+}
+label{
+    margin-left: 1%;
+}
+.register{
+    margin-top: 50px;
+}
+.register a{
+    color: orangered;
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 30px 0 27px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 26px;
+    padding: 10px 5px;
+    background-color: gainsboro;
+}
+.register a:hover{
+    background-color: #014b4b;
+    color: white;    
+}
+#sidenavigation{
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    z-index: 2;
+    background-color: #00a0a0;
+    right: -200px;
+    top: 0;
+    transition: 0.5s;
+}
+nav ul li{
+    list-style: none;
+    margin: 50px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: blueviolet;
+    font-weight: bolder;
+}
+nav ul li a i{
+    margin-right: 5px;
+}
+#menubtn{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(249, 249, 150);
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    border-radius: 5px;
+    z-index: 3;
+    cursor: pointer; 
+}
+#menubtn i{
+    width: 25px;
+    margin-top: 15px;
+}
+.footer-flex{
+    width: 100%;
+    display: flex;
+    padding: 1.7rem 1.25rem;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+}
+.footer-right-flex img{
+    width: 50px;
+}
+.footer-right-flex{
+    display: flex;
+    border-right: 2px solid #bdb8b8;
+}
+.footer-right-flex a{
+    text-decoration: none;
+    font-family: 'Fredoka One', cursive;
+    font-weight: bold;
+    color: rgb(134, 40, 222);
+    margin:10px;
+}
+#footer{
+    background-color: rgba(202, 202, 202,0.5);
+}
+.copyright{
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.social-media{
+    position: absolute;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 20px;
+    right: 50px;
+}
+.social-media a{
+    text-decoration: none;
+    margin-left: 10px;
+    display: inline-block;
+}
+.social-media i{
+    width: 1.25rem;
+    height: 1.25rem;
+}
+.fac-head{
+    text-align: center;
+    padding: 20px 10px;
+}
+.fac-head h2{
+    font-family: 'Permanent Marker', cursive;
+}
+
+.fac-head p{
+    font-family: 'Kaushan Script', cursive;
+    color: #09a7a7;
+    font-weight: bold;
+    z-index: 1;
+}
+#faculity-container{
+    background-color: rgb(245, 239, 239);
+}
+.fac-content{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+.faculties{
+    width: 50%;
+    flex-basis: 50%;
+}
+.fac-img{
+    width: 50%;
+    flex-basis: 50%;
+    margin:20px auto;
+    /* margin:auto; */
+}
+.fac-img img{
+    width: 70%;
+    border-radius: 10px;
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+.faculity{
+    margin: 25px;
+}
+.faculity p{
+    font-weight: bold;
+}
+.faculity h3{
+    text-align: left;
+    color: #1c9393; 
+}
+.faculity h3 i{
+    text-align: center;
+    width: 40px;
+    height: 20px;
+    border: 1px solid rgb(154, 152, 152);
+    border-radius: 3px;
+}
+.indigo-line{
+    height: 0.25rem;
+    width: 5rem;
+    background-color: rgba(125, 14, 204,0.5);
+    border-radius: 0.25rem;
+}
+.result-head h1{
+    color: rgba(52, 50, 50,1);
+    margin-bottom: 10px
+
+}
+.result-head{
+    padding: 5% 2%;
+    width: 20%;
+    font-family: 'Kaushan Script', cursive; 
+    color:rgb(131, 13, 215) ;
+}
+.result-flex{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.result-desc{
+    width: 70%;
+    font-size: medium;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+}
+.result-contain{
+    margin: 0rem;
+    flex-direction: row;
+}
+.result-box{
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    height: 50%;
+    text-align: center;
+}
+.stu-result{
+    background-color: rgba(229, 222, 222, 0.5);
+    padding: 1.5rem;
+    border-radius: 7px;
+    height: 100%;
+}
+.stu-result:hover{
+    box-shadow: 2px 2px 10px;
+}
+.stu-result img{
+    width: 70%;
+}
+.stu-result h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgba(210, 9, 9,0.7);
+}
+.stu-result h2{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    color: rgba(57, 57, 57,0.8);
+}
+.stu-result p{
+    font-family: 'Kaushan Script', cursive; 
+    color: rgb(73, 71, 71);
+}
+.p-1{
+    padding: 1rem;
+    width: 50%;
+}
+.testimonial-head h1{
+    font-weight: bold;
+    font-family: 'Kaushan Script', cursive; 
+    text-align: center;
+    align-items: center;
+    color: rgb(53, 53, 202);
+    margin: 4%;
+}
+.testimonial-flex{
+    display: flex;
+    margin: 10px;
+}
+.testimonial{
+    width: 50%;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 1rem;
+    background-color: rgba(199, 158, 158,0.5);
+    align-items: center;
+    box-shadow: 3px 3px slategray;
+}
+.quotes{
+    padding: 10px;
+    width: 40px;
+}
+.comment{
+    text-align: center;
+}
+.comment p{
+    font-family: 'Kaushan Script', cursive;
+    font-weight: bold;
+    color: rgb(49, 47, 47);
+}
+.user-detail-if{
+    display: inline-flex;
+    color: rgb(236, 69, 69);
+    margin: 20px;
+    align-items: center;
+    font-weight: bold;
+}
+.user-detail-if img{
+    border-radius: 30px;
+    margin: 5px;
+}
+@media screen and (max-width:750px) {
+    .logo{
+        left: 30%;
+    }
+    .point-name h1{
+        font-size: 30px;
+        font-family: 'Fredoka One', cursive;
+    }
+    .register a{
+        color: orangered;
+        display: inline-block;
+        text-decoration: none;
+        margin: 0 25px 0 25px;
+        border: 1px solid wheat;
+        border-radius: 5px;
+        font-size: 20px;
+        padding: 10px 5px;
+        background-color: gainsboro;
+    }
+    .footer-flex{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+        
+}
+.fac-content{
+    flex-direction: column;
+}
+.fac-img img{
+    width: 90%;
+}
+.fac-img{
+    width: 100%;
+}
+.social-media{
+    justify-content: center;
+    display: inline-flex;
+    
+}
+.faculties{
+    width: 90%;
+    flex-basis: 50%;}
+.faculity {
+    margin: 20px;
+    font-size: smaller;      
+}
+.result-desc{
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    margin: 0% 3%;
+}
+.indigo-line {
+    margin: 5px auto;
+}
+.result-head{
+    width: 100%;
+    text-align: center;
+}
+.p-1 {
+    width: 100%;
+}
+.testimonial-flex{
+    flex-wrap: wrap;
+}
+.testimonial{
+    width: 100%;
+}
+#query{
+    width: 65%;
+}
+}
+
+@media screen and (max-width:260px) {
+    #bg-banner{
+        height: 170vh;
+    }
+    .register a{
+        margin-bottom: 10px;
+    }
+    .logo{
+        left: 20%;
+    }
+    #query{
+        width: 80%;
+    }
+    .point-name h1{
+        font-size: 25px;
+    }
+    .point-name p {
+        font-size: small;
+    }
+    #menubtn{
+        width: 40px;
+        height: 45px;
+        right: 20px;
+    }
+}
