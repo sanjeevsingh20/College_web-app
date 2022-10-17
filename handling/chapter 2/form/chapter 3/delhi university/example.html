@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="examples.css">
+    <script src="https://kit.fontawesome.com/74c8a167f2.js" crossorigin="anonymous"></script>
+    <title>Zookeper-Registration</title>
+    <script type="text/javascript">
+        function myfun(click) {
+            alert('your application is submitted')
+        }
+        
+    </script>
+</head>
+
+<body class="body-form">
+    <div id="navbar-toogle">
+        <nav class="navigation-bar">
+            <ul>
+                <li><a href="#home" class="home" target="_blank"><i class="fa-solid fa-house-chimney"></i>Home</a></li>
+                <li><a href="#contact" class="contact" target="_blank"><i
+                            class="fa-solid fa-address-card"></i>Contact</a></li>
+                <li><a href="#job" class="jobs" target="_blank"><i class="fa-solid fa-laptop-file"></i>Jobs</a></li>
+                <li><a href="#help" class="help" target="_blank"><i class="fa-solid fa-circle-question"></i>Help</a>
+                </li>
+                <button class="end-button"><a href="#login" class="link-button">Log In</a></button>
+                <button class="end-button"><a href="#sign" class="link-button">Sign Up</a></button>
+
+            </ul>
+        </nav>
+    </div>
+    <div class="page-name">
+        <h1>Hoogly-Poogly Zoo</h1>
+
+    </div>
+    <div id="menubtn" onclick="hide(this)">
+        <i class="fa-solid fa-bars" id="menu"></i>
+    </div>
+    <div class="slideshow">
+        <div class="myslides">
+            <div class="number-text">1/3</div>
+            <img src="img_nature_wide.jpg" alt="nature image" style="width:100%;">
+            <div class="text">chapter one</div>
+        </div>
+
+        <div class="myslides">
+            <div class="number-text">2/3</div>
+            <img src="img_snow_wide.jpg" alt="snow image" style="width:100%;">
+            <div class="text">chapter two</div>
+        </div>
+        <div class="myslides">
+            <div class="number-text">3/3</div>
+            <img src="img_mountains_wide.jpg" alt="mountains image" style="width:100%;">
+            <div class="text">chapter three</div>
+        </div>
+
+    </div>
+    <h1 class="heading-zookeeper">
+        Zoo Keeper Application Form
+    </h1>
+    <span><mark> Please complete the form.Mandatory field are marked with a <em
+                    class="color-red">*</em></mark></span>
+    </div>
+    <div class="form-field">
+        <form action="" class="zookeper-form">
+            <div class="contact-details">
+                <fieldset>
+                    <legend class="field-legend">Contact Details</legend>
+
+                    <label for="name" class="contact-label">Name <em class="color-red">*</em></label>
+                    <input type="text" id="name" class="field" required placeholder="Your name"><br>
+                    <br>
+                    <label for="telephone" class="contact-label">Telephone</label>
+                    <input type="tel" id="telephone" class="field" placeholder="phone number"><br>
+                    <br>
+                    <label for="email" class="contact-label">Email <em class="color-red">*</em></label>
+                    <input type="text" class="field" id="email" required placeholder="abcd@gmail.com">
+                </fieldset>
+            </div>
+            <div class="field-info">
+                <fieldset>
+                    <legend class="field-legend">Personal information </legend>
+
+                    <label for="age" class="contact-label">Age <em class="color-red">*</em></label>
+                    <input type="number" id="age" class="field" min="19" max="65" required><br>
+                    <br>
+                    <label for="gender" class="contact-label">Gender</label>
+                    <input type="radio" name="gender" value="Male" id="male" class="field"><label
+                        for="male">male</label>
+                    <input type="radio" name="gender" id="female" value="Female" class="field"><label
+                        for="female">Female</label>
+                    <br>
+                    <br>
+                    <label for="suggestion" class="contact-label">
+                        <pre>when did you first <br>know you wanted to be <br>a zoo-keeper?
+                    </pre>
+                    </label>
+                    <textarea name="suugested" id="suggestion" cols="25" rows="10"></textarea>
+
+                </fieldset>
+
+            </div>
+            <div class="favourite-animal">
+                <fieldset>
+                    <legend class="field-legend">Pick Your Favourite Animal</legend>
+                    <label for="zebra" class="animals"><input type="checkbox" id="zebra">Zebra</label>
+                    <label for="cat" class="animals"><input type="checkbox" id="cat">Cat</label>
+                    <label for="dog" class="animals"><input type="checkbox" id="dog">dog</label>
+                    <label for="anaconda" class="animals"><input type="checkbox" id="anaconda">anaconada</label>
+                </fieldset>
+            </div>
+            <div class="submit-button">
+                <button type="submit" onclick="myfun(this)" method="post" class="buttons">Submit Apllication</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("myslides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+
+    </script>
+    <script>
+        var menubtn=document.getElementById("menubtn")
+        var menu=document.getElementById("menu")
+        var sidenavigation =document.getElementById("navbar-toogle")
+
+        function hide(click){
+            if(sidenavigation.style.left =="-250px"){
+                sidenavigation.style.left="0";
+            }
+            else{
+                sidenavigation.style.left="-250px";
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
